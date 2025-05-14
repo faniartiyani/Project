@@ -1,0 +1,10 @@
+radius_se
+texture_se
+area_se
+compactness_se
+concave points_se
+radius_worst
+texture_worst
+area_worst
+smoothness_worst
+concavity_worst

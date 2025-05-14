@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SKRIPSI FANI</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css1/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../static/css1/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012 345 6789</a>
+                        <span class="text-body">|</span>
+                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i>info@example.com</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-white shadow-sm mb-5">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+                <a href="{{ url_for('home') }}" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>SKRIPSI FANI</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="{{ url_for('home') }}" class="nav-item nav-link">Home</a>
+                        <a href="{{ url_for('about') }}" class="nav-item nav-link active">About</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Section About dengan Gambar di Kiri dan Konten di Kanan -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5 align-items-center">
+                <!-- Gambar di sebelah kiri -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img class="img-fluid rounded w-100 h-auto" 
+                        src="{{ url_for('static', filename='img2/about.jpg') }}" 
+                        alt="About Image" 
+                        style="object-fit: cover; max-height: 500px;">
+                </div>
+
+                <!-- Penjelasan dan Menu Fitur di sebelah kanan -->
+                <div class="col-lg-7">
+                    <!-- Judul dan Deskripsi -->
+                    <div class="mb-4">
+                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About</h5>
+                        <h1 class="display-7">Sistem Diagnosis Kanker Payudara Berbasis Machine Learning</h1>
+                        <p>Sistem ini dikembangkan untuk membantu proses diagnosis kanker payudara dengan memanfaatkan algoritma Machine Learning seperti Logistic Regression-RFE, SVC-RFE. Sistem ini menganalisis fitur morfologi untuk menghasilkan prediksi yang akurat.</p>
+                    </div>
+
+                    <!-- Menu Fitur (6 ikon) -->
+                    <div class="row g-3">
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-home fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">Home<small class="d-block text-primary">Halaman utama sistem dan algoritma.</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-info-circle fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">About<small class="d-block text-primary">Tujuan dan manfaat sistem diagnosis.</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-chart-line fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">Dashboard<small class="d-block text-primary">Visualisasi dan ringkasan analisis data.</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-database fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">Dataset<small class="d-block text-primary">Data yang digunakan dalam sistem.</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-vials fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">Pengujian<small class="d-block text-primary">Evaluasi performa model klasifikasi.</small></h6>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <div class="bg-light text-center py-3 h-100">
+                                <i class="fa fa-check-circle fa-2x text-primary mb-2 rounded-circle p-2 bg-white"></i>
+                                <h6 class="mb-0">Result<small class="d-block text-primary">Hasil diagnosis dari sistem.</small></h6>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Fitur -->
+                </div>
+            </div>
+        </div>
+    <!-- End About -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
